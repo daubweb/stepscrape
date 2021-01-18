@@ -1,0 +1,35 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+jupyterlab = "*"
+pandas = "*"
+numpy = "==1.19.3"
+matplotlib = "*"
+sklearn = "*"
+ipympl = "*"
+spacy = "*"
+liwc = "*"
+tabulate = "*"
+openpyxl = "*"
+seaborn = "*"
+pytest = "*"
+python-docx = "*"
+docx = "*"
+gensim = "*"
+xeus-python = "*"
+sympy = "*"
+cement = "*"
+
+[scripts]
+test = "coverage run -m unittest discover -s ./tests -p *_test.py"
+
+[dev-packages]
+flake8 = "*"
+autopep8 = "*"
+coverage = "*"
+
+[requires]
+python_version = "3.8"
